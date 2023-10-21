@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-size: 1.2rem;
+  /* background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027) !important; */
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to right, #2C5364, #203A43, #0F2027) !important; */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url('../public/bg.jpeg');
+}
+
+
+.container {
+  padding-block: 4rem;
+  text-align: center;
+}
+
+.container h2 {
+  color: #063346a0;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.card.quote-card {
+  background-color: #102731;
+  border: none !important;
+  color: #c8c8c8;
+  max-width: 30rem;
+  width: 90%;
+  margin-inline: auto;
+}
+
+blockquote>p {
+  padding-bottom: 0.8rem;
+}
+
+.badge.tag {
+  background-color: #275162ae !important;
+  color: #c8c8c8 !important;
+  margin-inline-end: 5px;
+  border-radius: 20px;
+}
+
+.btn-primary {
+  border: none !important;
+  color: #c8c8c8 !important;
+}
+
+.change-quote-btn {
+  margin-top: 1rem;
+  background-color: #1027319d !important;
+}
+
+.change-quote-btn:hover {
+  background-color: #102731 !important;
+}
+
+.toast.toast-error {
+  background-color: #f9dedc;
+  color: #410e0b;
+  border: none;
+  margin: auto;
+}
