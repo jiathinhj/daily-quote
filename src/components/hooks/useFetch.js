@@ -6,10 +6,10 @@ const useFetch = (url) => {
     const [loading, setLoading] = useState(false);
 
     const fetchData = async () => {
+        setLoading(true);
         try {
-            setLoading(true);
             await fetch(url)
-                .then(response => response.status === 200 && response.json())
+                .then(response => response.json())
                 .then(data => {
                     setData(data)
                     console.log(data)
@@ -20,8 +20,9 @@ const useFetch = (url) => {
         setLoading(false);
     }
     useEffect(() => {
-        fetchData();
-    }, [])
+        fetchData()
+    }, []);
+
     return { data, fetchData, error, loading }
 }
 

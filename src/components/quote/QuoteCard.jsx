@@ -1,19 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Badge, Button, Card, Spinner } from "react-bootstrap";
 import useFetch from "../hooks/useFetch";
 import ErrorToast from "./ErrorToast";
+import useRandomBg from "../hooks/useRandomBg";
 
 const QuoteCard = () => {
+  const { fetchBg } = useRandomBg();
   const { data, fetchData, error, loading } = useFetch(
     "https://api.quotable.io/random"
   );
-  console.log(data);
+
+  useEffect(() => {
+    loading && fetchBg();
+  }, [loading]);
+
   return (
     <>
-      {loading ? (
-        <Spinner style={{ color: "#19adec" }} />
-      ) : data ? (
-        <>
+      <div className="quote-section">
+        {loading ? (
+          <>
+            <Spinner style={{ color: "#19adec" }} />
+          </>
+        ) : data ? (
           <Card className="quote-card">
             <Card.Body>
               <blockquote className="blockquote mb-0">
@@ -27,13 +35,17 @@ const QuoteCard = () => {
               ))}
             </Card.Footer>
           </Card>
-          <Button className="change-quote-btn" onClick={fetchData}>
-            New quote
-          </Button>
-        </>
-      ) : (
-        error && <ErrorToast />
-      )}
+        ) : (
+          error && <ErrorToast />
+        )}
+      </div>
+      <Button
+        disabled={loading}
+        className="change-quote-btn"
+        onClick={fetchData}
+      >
+        New quote
+      </Button>
     </>
   );
 };

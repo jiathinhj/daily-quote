@@ -4,14 +4,20 @@
 }
 
 body {
-  font-size: 1.2rem;
+  font-size: 16px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #091920 !important;
+  height: 100vh;
+  width: 100vw;
   /* background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027) !important; */
   /* Chrome 10-25, Safari 5.1-6 */
   /* background: linear-gradient(to right, #2C5364, #203A43, #0F2027) !important; */
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-image: url('../public/bg.jpeg');
 }
-
 
 .container {
   padding-block: 4rem;
@@ -19,9 +25,16 @@ body {
 }
 
 .container h2 {
-  color: #063346a0;
+  color: #0e5877;
   font-weight: 700;
   margin-bottom: 0.8rem;
+  font-family: 'Lobster', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+}
+
+.quote-section {
+  min-height: 30vh;
 }
 
 .card.quote-card {
@@ -50,7 +63,6 @@ blockquote>p {
 }
 
 .change-quote-btn {
-  margin-top: 1rem;
   background-color: #1027319d !important;
 }
 
