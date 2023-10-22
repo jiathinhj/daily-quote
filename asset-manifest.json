@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/daily-quote/static/css/main.4e8b70bf.css",
-    "main.js": "/daily-quote/static/js/main.680b3ee7.js",
+    "main.css": "/daily-quote/static/css/main.e23730bf.css",
+    "main.js": "/daily-quote/static/js/main.3511e992.js",
     "static/js/787.0747ecb4.chunk.js": "/daily-quote/static/js/787.0747ecb4.chunk.js",
-    "static/media/bg.jpeg": "/daily-quote/static/media/bg.6431bc87c28d7d7061ed.jpeg",
     "index.html": "/daily-quote/index.html",
-    "main.4e8b70bf.css.map": "/daily-quote/static/css/main.4e8b70bf.css.map",
-    "main.680b3ee7.js.map": "/daily-quote/static/js/main.680b3ee7.js.map",
+    "main.e23730bf.css.map": "/daily-quote/static/css/main.e23730bf.css.map",
+    "main.3511e992.js.map": "/daily-quote/static/js/main.3511e992.js.map",
     "787.0747ecb4.chunk.js.map": "/daily-quote/static/js/787.0747ecb4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e8b70bf.css",
-    "static/js/main.680b3ee7.js"
+    "static/css/main.e23730bf.css",
+    "static/js/main.3511e992.js"
   ]
 }
