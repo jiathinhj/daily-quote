@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Badge, Button, Card, Spinner } from "react-bootstrap";
 import useFetch from "../hooks/useFetch";
 import ErrorToast from "./ErrorToast";
@@ -32,7 +32,7 @@ const QuoteCard = () => {
             </Card>
           </>
         ) : (
-          <ErrorToast />
+           <ErrorToast />
         )}
       </div>
       <Button

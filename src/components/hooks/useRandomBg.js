@@ -18,10 +18,6 @@ const useRandomBg = () => {
                 document.body.style.backgroundImage = `url(${res.url})`;
             })
     }
-
-    useEffect(() => {
-        fetchBg();
-    }, [])
     return { fetchBg };
 }
 

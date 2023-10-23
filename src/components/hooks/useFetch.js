@@ -6,7 +6,7 @@ const useFetch = (url) => {
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
 
-    const { fetchBg } = useRandomBg()
+    const { fetchBg } = useRandomBg();
 
     const fetchData = async () => {
         setLoading(true);
@@ -15,8 +15,9 @@ const useFetch = (url) => {
                 .then(response => response.json())
                 .then(data => {
                     setData(data)
+                    setError(null)
                 })
-            await fetchBg(); //fetch a background along with fetching a quote
+            await fetchBg(); //fetch a random background along with quote fetching
         } catch (error) {
             setError(error.message);
         }
