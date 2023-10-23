@@ -21,13 +21,14 @@ const ErrorToast = () => {
   };
   const wrapperRef = useRef(null);
   useClickOutside(wrapperRef);
+
   return (
     <Toast
-      // onClose={() => setShow(false)}
+      onClose={() => setShow(false)}
       show={show}
       // autohide
       // delay={5000}
-      // ref={wrapperRef}
+      ref={wrapperRef}
       className="toast-error"
     >
       <Toast.Body>Something went wrong! Please try again!</Toast.Body>

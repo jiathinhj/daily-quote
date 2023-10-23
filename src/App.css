@@ -75,4 +75,5 @@ blockquote>p {
   color: #410e0b;
   border: none;
   margin: auto;
+  margin-block: 1rem;
 }
