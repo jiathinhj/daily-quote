@@ -1,1 +1,1 @@
-Vistit the website here: https://jiathinhj.github.io/daily-quote/
+Visit the website here: https://jiathinhj.github.io/daily-quote/
